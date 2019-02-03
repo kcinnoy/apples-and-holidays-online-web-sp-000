@@ -63,6 +63,6 @@ def all_winter_holiday_supplies(holiday_hash)
         binding.pry
       end
     end
-    winter_supplies.flattern
+    winter_supplies.flatten
   end
 end
