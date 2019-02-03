@@ -76,7 +76,7 @@ def all_supplies_in_holidays(holiday_hash)
   # etc.
 
   holiday_supplies.map do |seasons, holidays|
-    puts seasons.capitalize
+    puts "#{seasons.to_s.capitalize}:"
       holidays.map do | holiday, item|
         puts "#{holiday} #{item}"
       end
