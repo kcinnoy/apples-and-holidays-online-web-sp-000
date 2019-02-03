@@ -60,9 +60,9 @@ def all_winter_holiday_supplies(holiday_hash)
     if seasons == :winter
       holidays.map do | holiday, item|
         winter_supplies << item
+        binding.pry
       end
     end
     winter_supplies
   end
-
 end
