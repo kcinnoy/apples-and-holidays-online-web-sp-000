@@ -80,7 +80,6 @@ def all_supplies_in_holidays(holiday_hash)
       holidays.map do | holiday, item|
         holiday_format = ""
         holiday_format << holiday.to_s.split("_").join(" ")
-        binding.pry
         # puts "  #{holiday.to_s.capitalize}: #{item.join(", ")}"
       end
     end
