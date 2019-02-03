@@ -65,3 +65,23 @@ def all_winter_holiday_supplies(holiday_hash)
   end
   winter_supplies.flatten
 end
+
+def all_supplies_in_holidays(holiday_hash)
+  # iterate through holiday_hash and print items such that your readout resembles:
+  # Winter:
+  #   Christmas: Lights, Wreath
+  #   New Years: Party Hats
+  # Summer:
+  #   Fourth Of July: Fireworks, BBQ
+  # etc.
+
+  holiday_supplies.map do |seasons, holidays|
+    puts season.to_s
+      holidays.map do | holiday, item|
+        winter_supplies << item
+      end
+    end
+  end
+
+
+end
